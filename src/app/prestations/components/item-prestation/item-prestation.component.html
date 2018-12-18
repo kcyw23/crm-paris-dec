@@ -1,0 +1,9 @@
+<tr>
+  <td>{{ item.typePresta }}</td>
+  <td>{{ item.client }}</td>
+  <td>{{ item.nbJours }}</td>
+  <td>{{ item.tjmHt | currency: "EUR" }}</td>
+  <td>{{ item.totalHt() | currency: "EUR" }}</td>
+  <td>{{ item.totalTtc() | currency: "EUR" }}</td>
+  <td>{{ item.state }}</td>
+</tr>

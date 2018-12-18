@@ -5,8 +5,10 @@ Todo:
   ✔ Create SharedModule @started(18-12-17 14:35) @done(18-12-17 14:35) @lasted(5s)
   ✔ Create UiModule @started(18-12-17 14:35) @done(18-12-17 14:35) @lasted(12s)
 
-  ☐ LoginRoutingModule pour la route login @started(18-12-18 11:28)
-  ☐ ClientsRoutingModule pour la route clients (ex PrestationsRouting) @started(18-12-18 11:28)
-  ☐ PageNotFoundRoutingModule pour la route ** (ex PrestationsRouting) @started(18-12-18 11:28)
+  ✔ LoginRoutingModule pour la route login @started(18-12-18 11:28) @done(18-12-18 14:24) @lasted(2h56m40s)
+  ✔ ClientsRoutingModule pour la route clients (ex PrestationsRouting) @started(18-12-18 11:28) @done(18-12-18 14:24) @lasted(2h56m40s)
+  ✔ PageNotFoundRoutingModule pour la route ** (ex PrestationsRouting) @started(18-12-18 11:28) @done(18-12-18 14:24) @lasted(2h56m40s)
+
+  
 
 
