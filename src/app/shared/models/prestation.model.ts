@@ -18,12 +18,10 @@ export class Prestation implements PrestationI {
   }
 
   totalHt(): number {
-    console.log('HT called');
     return this.tjmHt * this.nbJours;
   }
 
   totalTtc(tva?: number): number {
-    console.log('TTC called');
     if (!tva) {
       return this.totalHt() * (1 + this.tauxTva / 100);
     }

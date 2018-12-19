@@ -3,7 +3,16 @@
   <td>{{ item.client }}</td>
   <td>{{ item.nbJours }}</td>
   <td>{{ item.tjmHt | currency: "EUR" }}</td>
-  <td>{{ item.totalHt() | currency: "EUR" }}</td>
-  <td>{{ item.totalTtc() | currency: "EUR" }}</td>
-  <td>{{ item.state }}</td>
+  <td>{{ item | total | currency: "EUR" }}</td>
+  <td>{{ item | total: item.tauxTva | currency: "EUR" }}</td>
+  <td [appState]="item.state">
+    <select (change)="changeState($event)">
+      <option
+        [selected]="item.state === state.value"
+        *ngFor="let state of (states | keyvalue)"
+        [value]="state.value"
+        >{{ state.value }}</option
+      >
+    </select>
+  </td>
 </tr>

@@ -7,12 +7,12 @@ export const fakePrestation: Prestation[] = [
     client: 'Modis',
     nbJours: 10,
     comment: 'Angular'
+  }),
+  new Prestation({
+    id: 'firebase',
+    typePresta: 'Coaching',
+    client: 'Cap',
+    nbJours: 12,
+    comment: 'Abder'
   })
-  // new Prestation({
-  //   id: 'firebase',
-  //   typePresta: 'Coaching',
-  //   client: 'Cap',
-  //   nbJours: 12,
-  //   comment: 'Abder'
-  // })
 ];
