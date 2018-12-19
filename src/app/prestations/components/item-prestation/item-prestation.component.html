@@ -5,7 +5,7 @@
   <td>{{ item.tjmHt | currency: "EUR" }}</td>
   <td>{{ item | total | currency: "EUR" }}</td>
   <td>{{ item | total: item.tauxTva | currency: "EUR" }}</td>
-  <td [appState]="item.state">
+  <td [appStatePrestation]="item.state">
     <select (change)="changeState($event)">
       <option
         [selected]="item.state === state.value"

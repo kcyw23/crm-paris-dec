@@ -1,6 +1,6 @@
 import { Prestation } from 'src/app/shared/models/prestation.model';
 
-export const fakePrestation: Prestation[] = [
+export const fakePrestations: Prestation[] = [
   new Prestation({
     id: 'agf',
     typePresta: 'Formation',

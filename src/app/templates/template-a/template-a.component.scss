@@ -1,0 +1,11 @@
+@import "~src/variables";
+
+div {
+  background: $palette-color-one;
+  padding: 2rem;
+  h1 {
+    color: $light-color;
+    margin: 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,15 @@
+<tr>
+  <td>{{ item.name }}</td>
+  <td>{{ item.email }}</td>
+  <td [appStateClient]="item.state">
+    <select (change)="changeState($event)">
+      <option
+        [selected]="item.state === state.value"
+        *ngFor="let state of (states | keyvalue)"
+        [value]="state.value"
+        >{{ state.value }}</option
+      >
+    </select>
+  </td>
+</tr>
+

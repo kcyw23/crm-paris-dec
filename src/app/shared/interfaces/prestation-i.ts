@@ -1,4 +1,4 @@
-import { State } from '../enums/state.enum';
+import { StatePrestation } from '../enums/state-prestation.enum';
 
 export interface PrestationI {
   id: string;
@@ -7,7 +7,7 @@ export interface PrestationI {
   nbJours: number;
   tjmHt: number;
   tauxTva: number;
-  state: State;
+  state: StatePrestation;
   comment: string;
   totalHt(): number;
   totalTtc(): number;

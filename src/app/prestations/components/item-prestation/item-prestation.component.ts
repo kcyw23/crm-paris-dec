@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Prestation } from 'src/app/shared/models/prestation.model';
-import { State } from 'src/app/shared/enums/state.enum';
+import { StatePrestation } from 'src/app/shared/enums/state-prestation.enum';
 import { PrestationService } from '../../services/prestation.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { PrestationService } from '../../services/prestation.service';
 })
 export class ItemPrestationComponent implements OnInit {
   @Input() item: Prestation;
-  public states = State;
+  public states = StatePrestation;
 
   constructor(private ps: PrestationService) {}
 

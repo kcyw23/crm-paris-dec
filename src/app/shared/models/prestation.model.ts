@@ -1,5 +1,5 @@
 import { PrestationI } from '../interfaces/prestation-i';
-import { State } from '../enums/state.enum';
+import { StatePrestation } from '../enums/state-prestation.enum';
 
 export class Prestation implements PrestationI {
   id: string;
@@ -8,7 +8,7 @@ export class Prestation implements PrestationI {
   nbJours = 0;
   tjmHt = 500;
   tauxTva = 20;
-  state = State.OPTION;
+  state = StatePrestation.OPTION;
   comment: string;
 
   constructor(fields?: Partial<Prestation>) {

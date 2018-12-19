@@ -1,0 +1,22 @@
+@import "~src/variables";
+
+#tab .state-option {
+  background: $palette-color-three;
+}
+#tab .state-annule,
+.state-inactif {
+  background: $palette-color-two;
+}
+#tab .state-confirme,
+.state-actif {
+  background: $palette-color-four;
+}
+
+app-list-prestations #tab thead {
+  background: $dark-color;
+  color: $light-color;
+}
+
+#tab tbody > * {
+  display: contents;
+}

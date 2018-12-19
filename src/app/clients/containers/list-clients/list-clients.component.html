@@ -1,0 +1,8 @@
+<app-tableau [headers]="headers">
+  <app-item-client
+    *ngFor="let data of collection"
+    [item]="data"
+  ></app-item-client>
+</app-tableau>
+
+<app-add-row txt="Ajouter un client"></app-add-row>
