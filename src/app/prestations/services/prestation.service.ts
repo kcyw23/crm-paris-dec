@@ -25,5 +25,7 @@ export class PrestationService {
     item.state = state;
   }
 
-  public add(item: Prestation) {}
+  public add(item: Prestation) {
+    this.collection.push(item);
+  }
 }

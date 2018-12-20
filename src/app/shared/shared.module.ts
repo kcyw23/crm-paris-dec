@@ -8,6 +8,7 @@ import { TableauComponent } from './components/tableau/tableau.component';
 import { StateClientDirective } from './directives/state-client.directive';
 import { StatePrestationDirective } from './directives/state-prestation.directive';
 import { TotalPipe } from './pipes/total.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,8 +24,15 @@ import { TotalPipe } from './pipes/total.pipe';
     TableauComponent,
     AddRowComponent,
     StateClientDirective,
-    TemplatesModule
+    TemplatesModule,
+    ReactiveFormsModule
   ],
-  imports: [CommonModule, FontAwesomeModule, RouterModule, TemplatesModule]
+  imports: [
+    CommonModule,
+    FontAwesomeModule,
+    RouterModule,
+    TemplatesModule,
+    ReactiveFormsModule
+  ]
 })
 export class SharedModule {}
