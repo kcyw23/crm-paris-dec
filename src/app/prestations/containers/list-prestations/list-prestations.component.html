@@ -1,6 +1,6 @@
 <app-tableau [headers]="headers">
   <app-item-prestation
-    *ngFor="let data of collection"
+    *ngFor="let data of collection$ | async"
     [item]="data"
   ></app-item-prestation>
 </app-tableau>

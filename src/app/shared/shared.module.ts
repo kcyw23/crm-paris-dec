@@ -25,14 +25,16 @@ import { ReactiveFormsModule } from '@angular/forms';
     AddRowComponent,
     StateClientDirective,
     TemplatesModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   imports: [
     CommonModule,
     FontAwesomeModule,
     RouterModule,
     TemplatesModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ]
 })
 export class SharedModule {}
