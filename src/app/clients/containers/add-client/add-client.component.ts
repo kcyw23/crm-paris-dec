@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ClientService } from '../../services/client.service';
+import { Router, ActivatedRoute } from '@angular/router';
+import { Client } from 'src/app/shared/models/client.model';
 
 @Component({
   selector: 'app-add-client',
@@ -6,10 +9,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-client.component.scss']
 })
 export class AddClientComponent implements OnInit {
+  constructor(
+    private cs: ClientService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  public add(item: Client) {
+    this.cs.add(item).then(() => {
+      this.router.navigate(['../'], { relativeTo: this.route });
+    });
   }
-
 }

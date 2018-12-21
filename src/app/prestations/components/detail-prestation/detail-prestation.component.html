@@ -1,0 +1,10 @@
+<div class="container">
+  <ul *ngIf="(presta$ | async) as presta">
+    <li>{{ presta.client }}</li>
+    <li>{{ presta.nbJours }}</li>
+    <li>{{ presta.state }}</li>
+    <li>{{ presta.tjmHt }}</li>
+    <li>{{ presta | total }}</li>
+    <li>{{ presta | total: presta.tauxTva }}</li>
+  </ul>
+</div>

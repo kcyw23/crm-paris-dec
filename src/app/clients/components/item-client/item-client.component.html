@@ -11,5 +11,7 @@
       >
     </select>
   </td>
+  <button class="btn btn-danger" (click)="$event.stopPropagation(); delete()">
+    <fa-icon [icon]="faTrashAlt"></fa-icon>
+  </button>
 </tr>
-

@@ -1,3 +1,15 @@
 <app-template-a title="Prestations">
   <app-list-prestations></app-list-prestations>
 </app-template-a>
+<!-- navigation -->
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link" routerLink="detail" routerLinkActive="active">Detail</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="comment" routerLinkActive="active"
+      >Commentaire</a
+    >
+  </li>
+</ul>
+<router-outlet></router-outlet>

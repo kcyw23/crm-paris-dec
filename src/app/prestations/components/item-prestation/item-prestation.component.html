@@ -1,4 +1,4 @@
-<tr>
+<tr (click)="detail()">
   <td>{{ item.typePresta }}</td>
   <td>{{ item.client }}</td>
   <td>{{ item.nbJours }}</td>
@@ -6,7 +6,7 @@
   <td>{{ item | total | currency: "EUR" }}</td>
   <td>{{ item | total: item.tauxTva | currency: "EUR" }}</td>
   <td [appStatePrestation]="item.state">
-    <select (change)="changeState($event)">
+    <select (change)="changeState($event)" (click)="$event.stopPropagation()">
       <option
         [selected]="item.state === state.value"
         *ngFor="let state of (states | keyvalue)"
@@ -15,5 +15,7 @@
       >
     </select>
   </td>
-  <td><fa-icon [icon]="faTrashAlt"></fa-icon></td>
+  <button class="btn btn-danger" (click)="$event.stopPropagation(); delete()">
+    <fa-icon [icon]="faTrashAlt"></fa-icon>
+  </button>
 </tr>

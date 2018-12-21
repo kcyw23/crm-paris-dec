@@ -7,11 +7,17 @@ import { SharedModule } from '../shared/shared.module';
 import { ListClientsComponent } from './containers/list-clients/list-clients.component';
 import { PageAddClientComponent } from './pages/page-add-client/page-add-client.component';
 import { AddClientComponent } from './containers/add-client/add-client.component';
+import { FormClientComponent } from './components/form-client/form-client.component';
 
 @NgModule({
-  declarations: [PageClientsComponent, ItemClientComponent, ListClientsComponent, PageAddClientComponent, AddClientComponent],
-  imports: [
-    CommonModule, ClientsRoutingModule, SharedModule
-  ]
+  declarations: [
+    PageClientsComponent,
+    ItemClientComponent,
+    ListClientsComponent,
+    PageAddClientComponent,
+    AddClientComponent,
+    FormClientComponent
+  ],
+  imports: [CommonModule, ClientsRoutingModule, SharedModule]
 })
-export class ClientsModule { }
+export class ClientsModule {}
