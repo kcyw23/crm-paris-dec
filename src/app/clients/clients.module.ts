@@ -8,6 +8,7 @@ import { ListClientsComponent } from './containers/list-clients/list-clients.com
 import { PageAddClientComponent } from './pages/page-add-client/page-add-client.component';
 import { AddClientComponent } from './containers/add-client/add-client.component';
 import { FormClientComponent } from './components/form-client/form-client.component';
+import { DetailClientComponent } from './components/detail-client/detail-client.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormClientComponent } from './components/form-client/form-client.compon
     ListClientsComponent,
     PageAddClientComponent,
     AddClientComponent,
-    FormClientComponent
+    FormClientComponent,
+    DetailClientComponent
   ],
   imports: [CommonModule, ClientsRoutingModule, SharedModule]
 })

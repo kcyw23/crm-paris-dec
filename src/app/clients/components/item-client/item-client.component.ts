@@ -31,5 +31,7 @@ export class ItemClientComponent implements OnInit {
     // });
   }
 
+  public detail() {
+    this.cs.client$.next(this.item);
+  }
 }
-

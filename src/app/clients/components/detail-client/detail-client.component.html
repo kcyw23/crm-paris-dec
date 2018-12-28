@@ -1,0 +1,6 @@
+<div class="container">
+  <ul *ngIf="(client$ | async) as client">
+    <li>{{ client.email }}</li>
+    <li>{{ client.state }}</li>
+  </ul>
+</div>

@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SharedModule } from '../shared/shared.module';
 import { FormPrestationComponent } from './components/form-prestation/form-prestation.component';
 import { ItemPrestationComponent } from './components/item-prestation/item-prestation.component';

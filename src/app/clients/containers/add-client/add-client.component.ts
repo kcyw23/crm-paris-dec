@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ClientService } from '../../services/client.service';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Client } from 'src/app/shared/models/client.model';
+import { ClientService } from '../../services/client.service';
 
 @Component({
   selector: 'app-add-client',
